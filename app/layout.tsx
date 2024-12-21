@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Inter, Poppins} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import {ClerkProvider} from "@clerk/nextjs"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "700"], 
+  variable: "--font-poppins",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter", 
 });
 
 export const metadata: Metadata = {
@@ -24,13 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider> 
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+className={`${inter.variable} ${poppins.variable}`}
       >
         <Header/>
         {children}
       </body>
     </html>
+    </ClerkProvider>
   );
 }
