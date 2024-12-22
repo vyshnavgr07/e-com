@@ -18,7 +18,7 @@ const HeaderMenu = () => {
     <div className='hidden md:inline-flex items-center  w-1/3 gap-5 text-sm  capitalize font-semibold '>
         {menu?.map((item)=>(
         <Link
-        className="hover:text-darkColor  hoverEffect relative group"
+        className={`hover:text-darkColor  hoverEffect relative group ${pathname===item?.href && "text-black"}`}
          key={item?.title}  href={item.href}>
         {item.title}
         <span className={`absolute -bottom-0.5 left-1/2 h-0.5 bg-darkColor hoverEffect group-hover:w-1/2  group-hover:left-0 ${pathname===item?.href && "w-1/2"}`}></span>
