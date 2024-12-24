@@ -4,16 +4,16 @@ import "../globals.css";
 import Header from "@/components/header/Header";
 import {ClerkProvider} from "@clerk/nextjs"
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"], 
-  variable: "--font-poppins",
-});
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "700"], 
+//   variable: "--font-poppins",
+// });
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter", 
-});
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter", 
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +29,7 @@ export default function RootLayout({
     <ClerkProvider> 
     <html lang="en">
       <body
-className={`${inter.variable} ${poppins.variable}`}
+// className={`${inter.variable} ${poppins.variable}`}
       >
         <Header/>
         {children}

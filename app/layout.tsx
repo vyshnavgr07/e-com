@@ -3,7 +3,7 @@ import React from 'react'
 const RoorLayout = ({children}:{children:React.ReactNode}) => {
   return (
     <html lang='en'>
-<body >
+    <body >
     {children}
     </body>
     </html>
