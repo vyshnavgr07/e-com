@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SocialMedia from '../SocialMedia';
-import { useOutsideClick } from '@/hooks/useOutsideClick';
+
 
 
 interface props{

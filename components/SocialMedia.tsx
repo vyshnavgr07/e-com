@@ -10,7 +10,7 @@ interface props{
     tooltipClassName?:string
 }
 
-const SocialMedia = ({className,iconClassName,tooltipClassName}:props) => {
+const SocialMedia = ({className,iconClassName}:props) => {
     const socialLinks = [
         {
           title: "GitHub",
