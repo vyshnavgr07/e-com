@@ -12,11 +12,11 @@ const ProductTab = ({selected,setSelected,categories}:props) => {
 
   return (
     <div className='flex text-sm font-semibold'>
-      <div className='flex items-center gap-2 '>
+      <div className='flex   flex-wrap justify-center items-center    gap-2 '>
         {categories.map((item)=>(
           <button 
           onClick={()=>setSelected(item.value)}
-          className={`border border-darkColor px-4 py-1.5 md:px-6 md:py-2 rounded-full
+          className={`border border-darkColor   px-4 py-1.5 md:px-6 md:py-2  rounded-full
              hover:bg-darkColor hover:text-white hoverEffect ${selected===item.value&&"bg-darkColor text-white"}`}
           key={item.title}>
             {item.title}

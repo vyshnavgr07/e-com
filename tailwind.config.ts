@@ -9,7 +9,7 @@ export default {
   ],
   theme: {
   	extend: {
-  		colors: {
+	colors: {
       darkColor:"#151515",
 	   lightColor:"#52525b",
        lightOrange:"#fca99b",

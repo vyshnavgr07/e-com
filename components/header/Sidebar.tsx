@@ -41,7 +41,7 @@ const pathname=usePathname()
       </button>
        <Button 
         onClick={onClose}
-        className='hover:text-red-500 hoverEffect  font-semibold text-3xl ' >
+        className='hover:text-gray-500 hoverEffect  font-semibold text-3xl ' >
           x
         </Button >
 </div>
